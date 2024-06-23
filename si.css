@@ -20,6 +20,7 @@ header {
   border-radius: 55%;
 }
 
+
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -55,6 +56,7 @@ article {
 }
 
 .form {
+  
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -63,7 +65,17 @@ article {
   border: 20px solid #ef9898;
   border-radius: 5px;
   background-color: #dfdfdf;
+  @media (max-width:550px) {
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+  }
 }
+.formulär {
+  place-items: center;
+}
+ 
+
 
 label {
   margin: 0.5em 0 0.2em 0;
@@ -98,14 +110,10 @@ footer {
   width: 100%;
 }
 
-/* Responsiv design */
-@media (max-width: 600px) {
+@media (max-width:600px) {
   nav ul {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  nav ul li {
-      margin: 0.5em 0;
+    flex-direction: column;
+    align-items: center;
   }
 }
+
